@@ -279,6 +279,7 @@ public final class Arduino {
         arduino.enviaDados(down);
         String reset = "!035U*";
         arduino.enviaDados(reset);
+      valorAtual=0;
         System.out.println("Reset elevação para 0º = " + reset);
         return 1;
     }
